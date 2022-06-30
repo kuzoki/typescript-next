@@ -1,5 +1,7 @@
 .container {
-  padding: 0 2rem;
+  padding: 100px 2rem;
+  width: 80vw;
+  margin: 0 auto;
 }
 
 .main {
@@ -27,7 +29,10 @@
   align-items: center;
   flex-grow: 1;
 }
-
+.head{
+  font-size: 35px;
+  text-align: center;
+}
 .title a {
   color: #0070f3;
   text-decoration: none;
@@ -67,10 +72,10 @@
 
 .grid {
   display: flex;
-  align-items: center;
+  align-items: baseline;
   justify-content: center;
   flex-wrap: wrap;
-  max-width: 800px;
+  list-style: none;
 }
 
 .card {
@@ -83,6 +88,7 @@
   border-radius: 10px;
   transition: color 0.15s ease, border-color 0.15s ease;
   max-width: 300px;
+  cursor: pointer;
 }
 
 .card:hover,
@@ -94,12 +100,12 @@
 
 .card h2 {
   margin: 0 0 1rem 0;
-  font-size: 1.5rem;
+  font-size: 16px;
 }
 
 .card p {
   margin: 0;
-  font-size: 1.25rem;
+  font-size: 12px;
   line-height: 1.5;
 }
 
@@ -113,4 +119,35 @@
     width: 100%;
     flex-direction: column;
   }
+}
+.comments{
+  padding: 10px;
+  background: whitesmoke;
+
+}
+.comments .flex{
+  flex-direction: row;
+  display: flex;
+}
+.name{
+  font-size: 12px;
+  font-weight: 500;
+  margin-right: 20px;
+}
+.email{
+  font-size: 11px;
+  font-weight: 400;
+  margin-right: 20px;
+  color: red !important;
+  padding: 5px 10px;
+  background: white;
+  border-radius: 60px ;
+}
+.sm{
+  font-size: 11px;
+  font-weight: normal;
+}
+.center{
+  text-align: center;
+  margin-bottom: 30px;
 }
